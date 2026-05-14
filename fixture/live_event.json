@@ -1,0 +1,48 @@
+{
+  "events": [
+    {
+      "id": 1001,
+      "slug": "barcelona-real-madrid",
+      "startTimestamp": "2026-05-14T18:00:00Z",
+      "lastUpdatedAt": "2026-05-14T18:00:05Z",
+      "status": {
+        "type": "inprogress",
+        "description": "Live"
+      },
+      "isEditor": true,
+      "tournament": {
+        "id": 77,
+        "name": "La Liga",
+        "category": {
+          "name": "Spain"
+        }
+      },
+      "homeTeam": { "id": 1, "name": "Barcelona" },
+      "awayTeam": { "id": 2, "name": "Real Madrid" },
+      "homeScore": { "current": 2 },
+      "awayScore": { "current": 1 }
+    },
+    {
+      "id": 1002,
+      "slug": "chelsea-arsenal",
+      "startTimestamp": "2026-05-14T18:30:00Z",
+      "lastUpdatedAt": "2026-05-14T18:30:05Z",
+      "status": {
+        "type": "inprogress",
+        "description": "Live"
+      },
+      "isEditor": false,
+      "tournament": {
+        "id": 88,
+        "name": "Premier League",
+        "category": {
+          "name": "England"
+        }
+      },
+      "homeTeam": { "id": 3, "name": "Chelsea" },
+      "awayTeam": { "id": 4, "name": "Arsenal" },
+      "homeScore": { "current": 0 },
+      "awayScore": { "current": 0 }
+    }
+  ]
+}
