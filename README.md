@@ -62,7 +62,7 @@ GET /api/v1/sport/football/events/live
 ✅
 Hot path reads normalized tables only
 ✅
-Filter isEditor=true
+Exclude isEditor=true hard-ban events
 ✅
 Swagger
 ✅
@@ -156,7 +156,7 @@ curl http://localhost:8000/api/v1/sport/football/events/live
 Endpoint:
 reads normalized tables only;
 does not access raw JSON in hot path;
-filters isEditor=true;
+excludes isEditor=true hard-ban events;
 returns SofaScore-like response shape.
 
 

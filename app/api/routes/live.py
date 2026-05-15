@@ -28,7 +28,7 @@ def get_live_football_events(
         .join(HomeTeam, HomeTeam.id == Event.home_team_id)
         .join(AwayTeam, AwayTeam.id == Event.away_team_id)
         .join(Score, Score.event_id == Event.id)
-        .filter(Event.is_editor.is_(True))
+        .filter(Event.is_editor.is_(False))
         .order_by(Event.updated_at.desc())
         .all()
     )
