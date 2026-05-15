@@ -1,4 +1,4 @@
-version: "3.9"
+
 services:
   api:
     build: .
@@ -16,7 +16,7 @@ services:
   worker:
     build: .
     container_name: sports_live_worker
-    command: celery -A app.workers.celery_app worker --loglevel=info
+    command: celery -A app.workers.celery_app:celery_app worker --loglevel=info
     volumes:
       - .:/code
     depends_on:
@@ -32,7 +32,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: sports_live_db
     ports:
-      - "5432:5432"
+      - "5433:5432"
   redis:
     image: redis:7
     container_name: sports_live_redis
